@@ -86,3 +86,32 @@ button {
   display: flex;
   justify-content: space-around;
 }
+
+.form__container {
+  width: 550px;
+}
+
+.form {
+  display: flex; /*создание flex-контейнера*/
+  justify-content: center; /*выставление контента по центру*/
+  background-color: #1D263A; /*цвет заднего фона*/
+  color: #fff; /*цвет текста*/
+  padding-top: 115px; /* Внутренний отступ сверху */
+  padding-bottom: 115px; /*Внутренний отступ снизу*/
+  text-align: center; /*Устновка текста по центру*/
+}
+
+.form h1 {
+  font-size: 48px;
+}
+
+.form p {
+  font-size: 18px; /*размер текста*/
+  opacity: 0.65; /*прозрачность*/
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
