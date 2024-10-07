@@ -115,3 +115,87 @@ button {
   flex-direction: column;
   text-align: left;
 }
+
+.form form  {
+  display: grid;
+  grid-gap: 20px; /*промежуток между grid-элементами*/
+  margin-top: 60 px; /*отступ сверху*/
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 600; /*толщина текста*/
+  margin-bottom: 15px;
+}
+
+.form input { /*то же самое, что у select*/
+  font-size: 18px;
+  color: #213053;
+  height: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 15px;
+}
+
+.form select {
+  font-size: 18px;
+  color: #213053;
+  height: 60px; /*высота*/
+  padding-right: 20px; /*внутренний отступ справа*/
+  padding-left: 20px; /*внутренний отступ слева*/
+  border: none; /*убрать границу*/
+  border-radius: 15px; /*скругление*/
+}
+
+.form__submit {
+  font-size: 18px; 
+  font-weight: 600; /*толщина текста*/
+  margin-top: 40px; /*верхний отступ кнопки*/
+}
+
+select {
+  appearance: none;
+}
+
+button:hover { /*псевдокласс для изменения при наведении дяля всех кнопок*/
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transition: background-color 0.3s ease-in; /*плавный переход для заднего фона в 0.3с*/
+}
+
+footer {
+  padding: 90px 20px 90px 20px; /*внутренние отступы 90 сверху 20 справа 90 снизу 20 слева*/
+  font-size: 16px; /*размер текста*/
+  font-weight: 600;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.footer__group {
+  margin-right: 80px; /*отступы между группами ссылок справа*/
+}
+
+.footer__group h3 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links a {
+  margin-bottom: 15px;
+}
