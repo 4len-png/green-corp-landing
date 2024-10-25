@@ -3,6 +3,10 @@ header {
   justify-content: space-between;
   align-items: center; 
   padding: 20px;
+  position: sticky; /*позиция шапки "прилипает"*/
+  top: 0; /*расстояние от */
+  background-color: #fff;
+  z-index: 1; /*позиция выше всех остальных элементов*/
 }
 
 body {
@@ -198,4 +202,99 @@ footer {
 
 .footer__links a {
   margin-bottom: 15px;
+}
+
+@keyframes rotation { /*навзание rotate*/ 
+  to {
+    transform: rotate(360deg); /*анимация вращения вокруг оси*/
+  }
+}
+
+.about__sun {
+  animation-name: rotation;
+  animation-duration: 10s; /*длинна*/
+  animation-iteration-count: infinite; /*повторение*/
+  animation-timing-function: linear; /*вид анимации*/
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  .about__panel {
+    width: 280px;
+  }
+
+  .about__sun {
+    width: 75px;
+    height: 75px;
+  }
+
+  header {
+    width: 100%;
+    max-width: 1024px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  section {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  footer {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about h1 {
+    font-size: 36px;
+    line-height: 40px; /*растояние между строками*/
+  }
+
+  .form h1 {
+    font-size: 36px;
+    line-height: 40px; /*растояние между строками*/
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+  .about__panel {
+    width: 480px;
+  }
+
+  .about__sun {
+    width: 75px;
+    height: 75px;
+  }
+
+  header {
+    width: 100%;
+    max-width: 1024px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  section {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  footer {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about h1 {
+    font-size: 36px;
+    line-height: 40px; /*растояние между строками*/
+  }
+
+  .form h1 {
+    font-size: 36px;
+    line-height: 40px; /*растояние между строками*/
+  }
 }
