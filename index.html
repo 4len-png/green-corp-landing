@@ -2,11 +2,13 @@
 <html>
     <head>
         <title>Солнечные батареи GreenCorp</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> 
         <link rel="stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/all.min.css"> <!--Добавление open-source библиотеки-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--Добавление Animate.css-->
     </head>
     <body>
         <header> 
@@ -17,13 +19,13 @@
             </div>
         </header>
         <section class="about"> 
-            <div class="about__info"> 
+            <div class="about__info animate__animated animate__slideInLeft"> 
                 <h1>Солнечные панели GreenRobotic</h1>
                 <p>Производите дешёвую экологически чистую 
                 электроэнергию из солнечного света</p>
-                <button>Узнать подробнее</button>
+                <button>Узнать подробнее <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></button> <!-- Добавление иконки-->
             </div>
-            <div class="about__images"> 
+            <div class="about__images animate__animated animate__slideInRight"> 
                 <img class="about__sun" src="img/sun.png">
                 <img class="about__panel" src="img/solar-panel.png">
             </div>
@@ -89,5 +91,6 @@
                 GreenCorp © 2021
             </div>
         </footer>
+        <script src="font-awesome/js/all.min.js"></script>
     </body>
 </html>
